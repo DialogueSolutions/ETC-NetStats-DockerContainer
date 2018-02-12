@@ -14,9 +14,11 @@ After running the container enter it by typing `docker exec -it <containerName> 
 Now you should be presented with `bash` wihtin your container. Here you have to do two things.
 
 **First:**
+
 Navigate to `cd ~/etc-netstats/`
 
 **Second:**
+
 To build the full version run
 *grunt*
 To build the lite version run
@@ -25,6 +27,7 @@ If you want to build both versions run
 *grunt all*
 
 **Third:**
+
 Remember you are sitll inside your docker container, and hopefully still in the `cd ~/etc-netstats/` directory.
 In there there is a json file called: `ws_secret.json` make sure you updated your NetStats Password in there clients will need to connect to your server. I have not tried it with blank if clients can connect, but it does warn you on start that `ws_secret` is not set if it's left blank.
 
@@ -38,5 +41,5 @@ To change the port where your page exists on, edit the `app.js` inside the `~/et
 That's all, at first your stats pages will be blank, it will all populate once at least one node joins.
 
 That's all ENJOY
+
 donate ETC:0xc5bbf1ecdeba58013f17c6ede01aab73a17104a4
- 
