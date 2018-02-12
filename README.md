@@ -3,9 +3,14 @@ Run your own ETC NetStats in docker (https://github.com/Machete3000/etc-netstats
 
 This is actually super straight forward
 
-After eather pulling the image from Docker Hub, or building it with the docker file.
+After eather pulling the image from Docker Hub, or building it from the dockerfile.
+`docker pull bakon3/etc-netstats:v.02`
+or
+`docker build -t bakon3/etc-netstats .`
 
 Make sure you create directory `/.etc-netstats` and copy `startNetstats.sh` into it.
+
+Example command to run docker container from above image:`docker run -tid --name teststats.ethertrack.io -p 6060:6060/tcp -p 6060:6060/udp --mount type=bind,source=$HOME/.etc-netstats,target=/.etc-netstats/ bakon3/etc-netstats:v.02`
 
 As of right now, this will just run the container with netstats pre combiled in it.
 
