@@ -1,17 +1,11 @@
 #Install ubuntu 16 Image
 FROM ubuntu:16.04
 
-# Classic Geth install DIR
+# This is the instalation file for the whole envirment in the container. 
 COPY install /install
-
-# Geth/Http-RPC/WS-RPC
-#EXPOSE 30303 8545 8546 8082 8008 8888 8080 80 443
-
-# Define environment variable
-#ENV 
 
 # Run Config
 RUN sh /install/init
 
-#point
+#Entry point
 ENTRYPOINT exec /.etc-netstats/startNetstats.sh
