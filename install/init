@@ -12,5 +12,7 @@ apt-get install -y nodejs &&
 cd $HOME &&
 git clone https://github.com/Machete3000/etc-netstats &&
 cd etc-netstats &&
+npm install &&
+npm install -g grunt-cli &&
 
 ln -s /.etc-netstats $HOME/
