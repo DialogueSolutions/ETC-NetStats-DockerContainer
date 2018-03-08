@@ -10,7 +10,7 @@ or
 
 Make sure you create directory `/.etc-netstats` and copy `startNetstats.sh` into it.
 
-Example command to run docker container from above image:`docker run -tid --name teststats.ethertrack.io -p 6060:6060/tcp -p 6060:6060/udp --mount type=bind,source=$HOME/.etc-netstats,target=/.etc-netstats/ bakon3/etc-netstats:v.02`
+Example command to run docker container from above image:`docker run -tid --name teststats.ethertrack.io -p <port>:6060/tcp -p <port>:6060/udp --mount type=bind,source=$HOME/.etc-netstats,target=/.etc-netstats/ bakon3/etc-netstats:v.02`
 
 As of right now, this will just run the container with netstats pre combiled in it.
 
@@ -39,7 +39,7 @@ In there there is a json file called: `ws_secret.json` make sure you updated you
 **Run**
 npm start
 
-see the ETC Stats interface at http://localhost:3000
+see the ETC Stats interface at http://localhost:<port>
 
 To change the port where your page exists on, edit the `app.js` inside the `~/etc-netstats/` directory. It will ltierally be the last thing in the file. Don't worry you'll see it, it looks like this `server.listen(process.env.PORT || 6060);` where `6060` is the new port number.
 
