@@ -23,11 +23,15 @@ Now you should be presented with `bash` wihtin your container. Here you have to 
 Navigate to `cd ~/etc-netstats/`
 
 **Second:**
+run:
+*npm install*
 
 To build the full version run
 *grunt*
+
 To build the lite version run
 *grunt lite*
+
 If you want to build both versions run
 *grunt all*
 
