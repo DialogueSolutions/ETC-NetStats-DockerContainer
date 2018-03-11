@@ -10,7 +10,7 @@ apt-get update &&
 apt-get install -y nodejs &&
 
 cd $HOME &&
-git clone https://github.com/Machete3000/etc-netstats &&
+git clone https://github.com/DialogueSolutions/etc-netstats.git &&
 cd etc-netstats &&
 npm install &&
 npm install -g grunt-cli &&
