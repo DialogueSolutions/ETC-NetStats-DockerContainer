@@ -12,7 +12,7 @@ Make sure you create directory `$HOME/.etc-netstats` and copy `startNetstats.sh`
 
 Example command to run docker container from above image:
 
-`docker run -tid --name teststats.ethertrack.io -p <port>:3000/tcp -p <port>:3000/udp --mount type=bind,source=$HOME/.ethereum-classic/etc-netstats,target=/.etc-netstats/ bakon3/etc-netstats:v.02`
+`docker run -tid --name teststats.ethertrack.io -p <port>:3000/tcp -p <port>:3000/udp --mount type=bind,source=$HOME/.ethereum-classic/etc-netstats,target=/.etc-netstats/ bakon3/etc-netstats`
 
 As of right now, this will just run the container with netstats pre combiled in it.
 
