@@ -45,9 +45,7 @@ In there there is a json file called: `ws_secret.json` make sure you updated you
 **Run**
 npm start
 
-see the ETC Stats interface at http://localhost:<port>
-
-To change the port where your page exists on, edit the `app.js` inside the `~/etc-netstats/` directory. It will ltierally be the last thing in the file. Don't worry you'll see it, it looks like this `server.listen(process.env.PORT || 6060);` where `6060` is the new port number.
+see the ETC Stats interface at http://<DockerHostIP>:<ContainerPort>
 
 That's all, at first your stats pages will be blank, it will all populate once at least one node joins.
 
